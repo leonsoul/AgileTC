@@ -45,7 +45,7 @@ class LogIn extends React.PureComponent {
         }).then(res => {
           if (res && res.code === 200) {
             message.success('注册成功')
-            window.location.href = utils.getQueryString('jumpto') 
+            window.location.href = utils.getQueryString('jumpto')
           } else {
             message.error(res.msg)
           }
@@ -62,7 +62,7 @@ class LogIn extends React.PureComponent {
       <div className="login">
         <div className="card">
           <div className="title">
-            AgileTC<span>一套敏捷的测试用例管理平台</span>
+            AllTuu Test Case<span>一套敏捷的测试用例管理平台</span>
           </div>
           <span
             className={type === '1' ? 'btn btn_active' : 'btn'}
